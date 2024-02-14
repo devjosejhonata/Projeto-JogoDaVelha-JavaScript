@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Projeto - Jogo da Velha - José Jhonata</title>
+    <!---->  
+</head>
+<body>
+    <h1>JOGO DA VELHA</h1>
+    <!--Titulo do Jogo--> 
+    <div id="buttons-container">
+        <!--Botoes escolher jogadores-->
+        <button id="2-players">2 Jogadores</button>
+        <button id="ai-player">Contra IA</button>
+    </div>
+    <div id="container" class="hide">
+        <!--Campo do jogo da velha, container que representa a grade do jogo-->
+        <!--a classe hide vai ter um css que vai esconder todos os elementos, vou manipular os elementos que aparecem e somem-->
+        <div class="box" id="block-1"></div>
+        <div class="box" id="block-2"></div>
+        <div class="box" id="block-3"></div>
+        <div class="box" id="block-4"></div>
+        <div class="box" id="block-5"></div>
+        <div class="box" id="block-6"></div>
+        <div class="box" id="block-7"></div>
+        <div class="box" id="block-8"></div>
+        <div class="box" id="block-9"></div>
+        <!--Divs dos 9 blocos do jogo--> 
+
+        <div id="scoreboard-container">
+        <!--Div com o placar do jogo, um para o x e um para o bolinha-->
+          <h2>Placar:</h2>
+           <span class="score-box">
+             <span id="x-scoreboard">x</span>:
+             <span id="scoreboard-1">0</span>
+           </span>
+           <span class="score-box">
+              <span id="o-scoreboard"></span>:
+              <span id="scoreboard-2">0</span>
+           </span>
+           <!--spans que representam o placar--> 
+           <!--Obs: o x do jogo, fiz digitando no teclado mesmo, ja a bolinha fiz com o css--> 
+        </div>
+    </div>
+
+    <div class="hide">
+    <!--div com elementos x e a bolinha que vou manipular do jogo-->
+    <!--Nao precisa de texto dentro da div da bolinha pois vou faze-la com css--> 
+       <div class="x">x</div>
+       <div class="o"></div>
+    </div>
+
+    <div id="message" class="hide">
+    <!--Div da mensagem que vai aparecer na tela após o resultado do Jogo--> 
+    <!--classe hide pois tambem vou esconde-la--> 
+       <p>teste msg de vitoria</p>
+    </div>
+<script src="JS/script.js"></script>
+</body>
+</html>
